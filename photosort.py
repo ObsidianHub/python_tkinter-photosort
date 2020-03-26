@@ -17,4 +17,7 @@ root.geometry('500x150')
 frame = Frame(root, bg="#56ADFF")
 frame.pack()
 
+e_path = Entry(frame)
+e_path.pack(side=LEFT, expand=True, fill=X)
+
 root.mainloop()
