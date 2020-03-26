@@ -18,7 +18,13 @@ def f_start():
         path = os.path.join(folder, file)
         mtime = os.path.getmtime(path)
         date = datetime.fromtimestamp(mtime)
-        
+        date = date.strftime("%Y-%m-%d")
+        date_folder = os.path.join(cur_path, date)
+        if not os.path.exists(date_folder):
+          os.mkdir(date_folder)
+        os.rename(path, os.path.join(date_folder, file))
+    messagebox.showinfo('Success', 'Сортировка выполнена успешно')
+    e_path.delete(0, END)
 
 root = Tk()
 root.title('PhotoSort')
