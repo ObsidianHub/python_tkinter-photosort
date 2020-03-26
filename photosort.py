@@ -25,6 +25,8 @@ def f_start():
         os.rename(path, os.path.join(date_folder, file))
     messagebox.showinfo('Success', 'Сортировка выполнена успешно')
     e_path.delete(0, END)
+  else:
+    messagebox.showwarning('Warning', 'Выберите папку с фотографиями')
 
 root = Tk()
 root.title('PhotoSort')
