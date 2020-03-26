@@ -33,7 +33,7 @@ root.title('PhotoSort')
 root.geometry('500x150+1000+300')
 
 s = ttk.Style()
-s.configure('my.TButton', font=("Helvatica", 15))
+s.configure('my.TButton', font=("Helvetica", 15))
 
 frame = Frame(root, bg="#56ADFF", bd=5)
 frame.pack(pady=10, padx=10, fill=X)
