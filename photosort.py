@@ -6,7 +6,9 @@ import os
 from datetime import datetime
 
 def choose_dir():
-  pass
+  dir_path = filedialog.askdirectory()
+  e_path.delete(0, END)
+  e_path.insert(0, dir_path)
 
 def f_start():
   pass
