@@ -20,4 +20,10 @@ frame.pack()
 e_path = Entry(frame)
 e_path.pack(side=LEFT, expand=True, fill=X)
 
+btn_dialog = Button(frame, text="Выбрать папку", command=choose_dir)
+btn_dialog.pack(side=LEFT)
+
+btn_start = Button(root, text="Start", command=f_start)
+btn_start.pack(side=LEFT)
+
 root.mainloop()
