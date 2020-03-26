@@ -11,7 +11,10 @@ def choose_dir():
   e_path.insert(0, dir_path)
 
 def f_start():
-  pass
+  cur_path = e_path.get()
+  if cur_path:
+    for folder, subfolders, files in os.walk(cur_path):
+      pass
 
 root = Tk()
 root.title('PhotoSort')
