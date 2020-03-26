@@ -14,7 +14,11 @@ def f_start():
   cur_path = e_path.get()
   if cur_path:
     for folder, subfolders, files in os.walk(cur_path):
-      pass
+      for file in files:
+        path = os.path.join(folder, file)
+        mtime = os.path.getmtime(path)
+        date = datetime.fromtimestamp(mtime)
+        
 
 root = Tk()
 root.title('PhotoSort')
